@@ -1,7 +1,7 @@
 require("dotenv").config();
 const recording = require("log4js/lib/appenders/recording");
 const { CloudClient, FileTokenStore, logger: sdkLogger } = require("cloud189-sdk");
-const { push } = require("./push");
+const { push } = require("./push/index");
 const { logger, cleanLogs, catLogs } = require("./logger");
 const { mask, delay, getIpAddr } = require("./utils");
 
